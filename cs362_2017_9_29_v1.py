@@ -186,7 +186,6 @@ def main():
                 previous()
 
         elif cmd == 3:
-            bl = True
             print("1 = Delete Discontinued item from Inventory and Products")
             print("2 = List the item which are reached the threshold for reordering")
             print("3 = Previous Page")
