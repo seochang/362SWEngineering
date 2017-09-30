@@ -123,6 +123,7 @@ PaymentType VARCHAR(10) NOT NULL,
 PRIMARY KEY (TransactionID) );"""
 cursor.execute (sql_command)
 
+####### CREATE ORDERS TABLE #######
 sql_command = """
 CREATE TABLE IF NOT EXISTS ORDERS(
 ItemNumber INT(5) NOT NULL,
