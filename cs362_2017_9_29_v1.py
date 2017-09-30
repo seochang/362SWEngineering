@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #Dana Shorts, Johnal, Helen, Kavit, Natalie
-# Basic Iventory and Customer program
+# Basic Inventory and Customer program
 from __future__ import print_function
 
 import sqlite3
