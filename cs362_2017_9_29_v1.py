@@ -187,7 +187,6 @@ def main():
                 previous()
 
         elif cmd == 3:
-            bl = True
             print("1 = Delete Discontinued item from Inventory and Products")
             print("2 = List the item which are reached the threshold for reordering")
             print("3 = Previous Page")
@@ -296,7 +295,7 @@ def Discontinued():
         print("Input the item number discontinued item")
         item = input('Enter item number: ')
         cursor.execute("DELETE FROM INVENTORY WHERE Item_Number = ?", (item,))
-        cursor.execute("DELETE FROM PRODUCTS WHERE Item_Number = ?", (item,))
+        cursor.execute("DELETE FROM PRODUCTS WHERE ItemNumber = ?", (item,))
 
 def newSale():
     products_table = 'PRODUCTS'
